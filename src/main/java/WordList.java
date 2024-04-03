@@ -12,7 +12,7 @@ public class WordList
   {
     int count = 0;
     for(int i = myList.size(); i > 0; i--)
-      if(myList.size(i) == len)
+      if(myList.get(i) == len)
       count++;
     return count;
   }
@@ -21,7 +21,7 @@ public class WordList
   {
     /* to be implemented in part (b) */
     for(int i = myList.size(); i > 0; i--)
-      if(myList.size(i) == len)
+      if(myList.get(i) == len)
         myList.remove(i);
   }
 }
